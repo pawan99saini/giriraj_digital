@@ -106,7 +106,7 @@
 																</div>
 																<!--end::Icon-->
 																<!--begin::Datepicker-->
-																<input class="form-control form-control-solid ps-12 flatpickr-input" placeholder="Select a date" name="start_date" type="date" >
+																<input class="form-control form-control-solid ps-12 flatpickr-input" placeholder="Select a date" name="start_date" type="date" min="<?php echo date("Y-m-d"); ?>">
 																<!--end::Datepicker-->
 															</div>
 															

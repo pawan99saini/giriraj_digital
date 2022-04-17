@@ -21,6 +21,7 @@ class CreateEventsTable extends Migration
             $table->date('end_date')->nullable();
             $table->string('recurrence_type',20);
             $table->integer('user_id');
+            $table->integer('parent_id')->nullable();
             $table->timestamps();
         });
     }

@@ -13,11 +13,8 @@ class Kernel extends ConsoleKernel
      * @var array
      */
     protected $commands = [
-        Commands\DailyCron::class,
-        Commands\WeeklyCron::class,
-        Commands\MonthlyCron::class,
-        Commands\YearlyCron::class,
-    ];
+        Commands\DailyCron::class
+       ];
      
     /**
      * Define the application's command schedule.
@@ -29,12 +26,6 @@ class Kernel extends ConsoleKernel
     {
         $schedule->command('daily:cron')
                  ->daily();
-   $schedule->command('weekly:cron')
-                 ->weekly();
-   $schedule->command('monthly:cron')
-                 ->monthly();
-   $schedule->command('yearly:cron')
-                 ->yearly();
     }
      
     /**

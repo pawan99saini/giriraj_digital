@@ -36,6 +36,14 @@ var KTCreate = function() {
                             },
                             
                         }
+                    },
+                    'end_date': {
+                        validators: {
+                            Enddate: {
+                                message: 'End must be greater than start date'
+                            },
+                            
+                        }
                     } 
 				},
 				plugins: {

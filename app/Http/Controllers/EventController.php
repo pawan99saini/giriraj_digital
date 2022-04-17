@@ -15,7 +15,7 @@ class EventController extends Controller
      */
     public function index()
     {
-        $results = Event::with(['user'])->where('user_id',Auth::user()->id);
+        $results = Event::with(['user'])->where('user_id',Auth::user()->id)->orderBy('id','desc');
         $events = $results->get();   
         return view('event.list',compact('events'));
     }
